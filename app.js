@@ -59,6 +59,18 @@ $(window).on('keypress', function handler(event){
   }
 });
 
+$('.btn').on('click', function(e){
+  $("#" + position1).text("");
+  $("#" + position2).text("");
+  position1 = 1;
+  position2 = 27;
+  $('#1').append(player1);
+  $('#27').append(player2);
+  // if(position1 === 26 || position2 === 52){
+  //
+  // }
+});
+
 
 
 
