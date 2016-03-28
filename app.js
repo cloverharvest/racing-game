@@ -2,14 +2,14 @@ $(document).on('ready', function() {
 //code here
 
 console.log("JS is working");
-
+/* code to get random letter for future version of game */
 letters = "abcdefghijklmnopqurstuvwxyz";
 var ranLett1 = letters.substr( Math.floor(Math.random() * 27), 1);
 var ranLett2 = letters.substr( Math.floor(Math.random() * 27), 1);
 console.log(ranLett1);
 console.log(ranLett2);
 
-
+/* appending random letter to screen using handlebars */
 function handlebar_append() {
     var source = $('#random-template').html();
     var template = Handlebars.compile(source);
@@ -30,7 +30,7 @@ $('#1').append(player1);
 $('#27').append(player2);
 
 
-
+/* function to move player1 */
 $(window).on('keypress', function handler(event){
   if(event.keyCode === 97){
     console.log(event);
@@ -45,6 +45,7 @@ $(window).on('keypress', function handler(event){
   }
 });
 
+/*function to move player2*/
 $(window).on('keypress', function handler(event){
   if(event.keyCode === 112){
     console.log(event);
@@ -59,7 +60,7 @@ $(window).on('keypress', function handler(event){
   }
 });
 
-
+/* code to play with */
 // function Player (name, position, ranLett, keycode, winpos) {
 //   this.name = name;
 //   this.position = position;
