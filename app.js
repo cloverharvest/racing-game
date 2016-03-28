@@ -59,6 +59,38 @@ $(window).on('keypress', function handler(event){
   }
 });
 
+
+// function Player (name, position, ranLett, keycode, winpos) {
+//   this.name = name;
+//   this.position = position;
+//   this.randomLetter = ranLett;
+//   this.keycode = keycode;
+//   this.winposition = winpos;
+//   this.move = $(window).on('keypress', function handler(event){
+//     if(event.keycode === this.keycode){
+//       if($("#" + this.position).text !== "") {
+//         $("#" + this.position).empty();
+//         this.position++;
+//         $("#" + this.position).text(this.name);
+//       }
+//     }
+//   this.win = function () {
+//     if(this.position === this.winposition) {
+//       alert("this.name" + "wins!");
+//     }
+//   };
+// });
+// }
+//
+//   var player1 = new Player("P1", 1, "", 97, 26);
+//   var player2 = new Player("P2", 27, "", 112, 52);
+//
+//   $('#1').append(player1);
+//   $('#27').append(player2);
+//
+//   player1.move();
+
+/* Reset Button */
 $('.btn').on('click', function(e){
   $("#" + position1).text("");
   $("#" + position2).text("");
@@ -66,90 +98,9 @@ $('.btn').on('click', function(e){
   position2 = 27;
   $('#1').append(player1);
   $('#27').append(player2);
-  // if(position1 === 26 || position2 === 52){
-  //
-  // }
 });
 
 
 
 
 });
-
-
-
-// var player1 = 'x';
-//   var player2 = 'y';
-//   var position1 = 1;
-//   var position2 = 12;
-//   $("#1").append(player1);
-//   $("#box24").append(player2);
-//   $(window).on('keypress', function handler(event) {
-//     console.log(1);
-//     if (event.which === 97) {
-//       if ($("#" + position1).text !== "") {
-//         $("#" + position1).empty();
-//         position1++;
-//         $("#" + position1).text(player);
-//         console.log("after key press");
-//       }
-//     }
-
-
-
-
-// function Player (name, keycode, color){
-//   this.name = name;
-//   this.keycode = keycode;
-//   this.color = color;
-//   this.move = function () {
-//     $(window).keypress(function moveRight(event){
-//       console.log(event);
-//       if (event.keyCode === 80){
-//         $('#player1').animate({ "left": "+=20px" }, 0);
-//       }
-//     });
-//   };
-//
-// }
-
-
-
-
-
-
-
-
-
-
-// var player1 = new Player()
-//
-// function Player (color,keybutton,win){
-//     this.= id;
-//     this.keybutton = keybutton;
-//     this.win = win;
-//     this.move = function(){
-//       $(window).on('keydown',function moveRight(event) {
-//         if (event.keyCode === keybutton){
-//           $('#'+id).animate({ "left": "+=20px" }, 0 );
-//         }
-//       });
-//     };
-//   }
-
-
-// function random_character_box1() {
-//     var letters = "abcdefghijklmnopqurstuvwxyz";
-//     var ranLett1 = letters.substr( Math.floor(Math.random() * 27), 1);
-//     var ranLett2 = letters.substr( Math.floor(Math.random() * 27), 1);
-//     console.log(ranLett);
-//
-//     var source = $('#random-template').html();
-//     var template = Handlebars.compile(source);
-//     var trackHtml = template({
-//      random1: ranLett1,
-//      random2: ranLett2
-//     });
-//     console.log(trackHtml);
-//     $('#rando').append(trackHtml);
-// }

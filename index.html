@@ -1,94 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-  	<meta charset="utf-8">
-		<!-- set viewport to device width to allow responsiveness -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Rando Racer</title>
+<head>
+	<meta charset="utf-8">
+	<!-- set viewport to device width to allow responsiveness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Bootstrap CDN -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>Rando Racer</title>
 
-		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-    <!-- jQuery -->
-		<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-		<!-- Handlebars -->
-  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<!-- jQuery -->
+	<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
 
-    <!-- Custom JS -->
-    <script src="app.js"></script>
+	<!-- Handlebars -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 
-  </head>
-    <body>
-			<center>
-				<h1> RANDO RACER </h1>
-			</center>
-			<div class="container-fluid">
-				<div id="rando">
-					<script id="random-template" type="text/x-handlebars-template">
-					<div class="row" id="track1">
+	<!-- Custom JS -->
+	<script src="app.js"></script>
 
+</head>
 
-
-						<div class="col-sm-1" id="1"></div>
-						<div class="col-sm-1" id="2"></div>
-						<div class="col-sm-1" id="3"></div>
-						<div class="col-sm-1" id="4"></div>
-						<div class="col-sm-1" id="5"></div>
-						<div class="col-sm-1" id="6"></div>
-						<div class="col-sm-1" id="7"></div>
-						<div class="col-sm-1" id="8"></div>
-						<div class="col-sm-1" id="9"></div>
-						<div class="col-sm-1" id="10"></div>
-						<div class="col-sm-1" id="11"></div>
-						<div class="col-sm-1" id="12"></div>
-						<div class="col-sm-1" id="13"></div>
-						<div class="col-sm-1" id="14"></div>
-						<div class="col-sm-1" id="15"></div>
-						<div class="col-sm-1" id="16"></div>
-						<div class="col-sm-1" id="17"></div>
-						<div class="col-sm-1" id="18"></div>
-						<div class="col-sm-1" id="19"></div>
-						<div class="col-sm-1" id="20"></div>
-						<div class="col-sm-1" id="21"></div>
-						<div class="col-sm-1" id="22"></div>
-						<div class="col-sm-1" id="23"></div>
-						<div class="col-sm-1" id="24"></div>
-						<div class="col-sm-1" id="25"></div>
-						<div class="col-sm-1" id="26"></div>
-
-
-
-
+<body>
+	<center>
+		<h1> RANDO RACER </h1>
+	</center>
+	<div class="container-fluid">
+		<div id="rando">
+			<script id="random-template" type="text/x-handlebars-template">
+				<div class="row" id="track1">
+					<div class="col-sm-1" id="1"></div>
+					<div class="col-sm-1" id="2"></div>
+					<div class="col-sm-1" id="3"></div>
+					<div class="col-sm-1" id="4"></div>
+					<div class="col-sm-1" id="5"></div>
+					<div class="col-sm-1" id="6"></div>
+					<div class="col-sm-1" id="7"></div>
+					<div class="col-sm-1" id="8"></div>
+					<div class="col-sm-1" id="9"></div>
+					<div class="col-sm-1" id="10"></div>
+					<div class="col-sm-1" id="11"></div>
+					<div class="col-sm-1" id="12"></div>
+					<div class="col-sm-1" id="13"></div>
+					<div class="col-sm-1" id="14"></div>
+					<div class="col-sm-1" id="15"></div>
+					<div class="col-sm-1" id="16"></div>
+					<div class="col-sm-1" id="17"></div>
+					<div class="col-sm-1" id="18"></div>
+					<div class="col-sm-1" id="19"></div>
+					<div class="col-sm-1" id="20"></div>
+					<div class="col-sm-1" id="21"></div>
+					<div class="col-sm-1" id="22"></div>
+					<div class="col-sm-1" id="23"></div>
+					<div class="col-sm-1" id="24"></div>
+					<div class="col-sm-1" id="25"></div>
+					<div class="col-sm-1" id="26"></div>
 				</div>
 				<div class="row">
-
-							<div class="col-sm-3" id="rand-box-1">
-								<h2>Player 1</h2>
-								<center>{{random1}}</center>
-							</div>
-							<div class="col-sm-6">
-							<center>How to Play</center><br>
-								<hr>
-								<p>
-								<li>A random letter will apear in your designated box</li>
-								<li>Press on the random letter to move your piece forward</li>
-								<li>First player to reach the end wins!</li>
-							</p>
-							</div>
-							<div class="col-sm-3" id="rand-box-2">
-								<h2>Player 2</h2>
-								<center>{{random2}}</center>
-							</div>
+					<div class="col-sm-3" id="rand-box-1">
+						<h2>Player 1</h2>
+						<center>{{random1}}</center>
 					</div>
-
+					<div class="col-sm-6">
+						<center>How to Play</center>
+						<br>
+						<hr>
+						<p>
+							<li>A random letter will apear in your designated box</li>
+							<li>Press on the random letter to move your piece forward</li>
+							<li>First player to reach the end wins!</li>
+						</p>
+					</div>
+					<div class="col-sm-3" id="rand-box-2">
+						<h2>Player 2</h2>
+						<center>{{random2}}</center>
+					</div>
+				</div>
 				<div class="row" id="track2">
-
-
 					<div class="col-sm-1" id="27"></div>
 					<div class="col-sm-1" id="28"></div>
 					<div class="col-sm-1" id="29"></div>
@@ -116,14 +108,12 @@
 					<div class="col-sm-1" id="51"></div>
 					<div class="col-sm-1" id="52"></div>
 				</div>
-			</div>
-			<center><button type="button" class="btn btn-danger">Reset</button></center>
 		</div>
-			</script>
+		<center>
+			<button type="button" class="btn btn-danger">Reset</button>
+		</center>
+	</div>
+	</script>
+</body>
 
-
-
-
-
-    </body>
 </html>
