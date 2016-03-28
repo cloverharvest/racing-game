@@ -32,12 +32,14 @@ $('#27').append(player2);
 
 /* function to move player1 */
 $(window).on('keypress', function handler(event){
-  if(event.keyCode === 97){
+  if(event.keyCode === ranLett1.charCodeAt() ){
     console.log(event);
     if($("#" + position1).text !== "") {
       $("#" + position1).empty();
       position1++;
       $("#" + position1).text(player1);
+      ranLett1 = letters.substr( Math.floor(Math.random() * 27), 1);
+      $('#rand-box-1').text(ranLett1);
     }
     if(position1 === 26){
       alert("Player 1 wins!");
@@ -47,12 +49,14 @@ $(window).on('keypress', function handler(event){
 
 /*function to move player2*/
 $(window).on('keypress', function handler(event){
-  if(event.keyCode === 112){
+  if(event.keyCode === ranLett2.charCodeAt()){
     console.log(event);
     if($("#" + position2).text !== "") {
       $("#" + position2).empty();
       position2++;
       $("#" + position2).text(player2);
+      ranLett2 = letters.substr( Math.floor(Math.random() * 27), 1);
+      $('#rand-box-2').text(ranLett2);
     }
     if(position2 === 52){
       alert("Player 2 wins!");
