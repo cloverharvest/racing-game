@@ -33,6 +33,10 @@ div.col-sm-1 {
   border-style: groove;;
 }
 
+h1 {
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
+
 
 
 
@@ -43,13 +47,19 @@ div.col-sm-6 {
 
 div.col-sm-6 center {
   padding-top: 20px;
-  font-size: 30px;
+  font-size: 50px;
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
+
+li {
+  font-size: 20px;
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
 }
 
 div.col-sm-3 {
   border-style: groove;
   position: relative;
-  pad
+  margin-top: 40px;
 
 
 }
